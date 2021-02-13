@@ -1,0 +1,52 @@
+body {
+    height: 5000px;
+}
+
+.coche {
+    display: block;
+    margin: auto;
+    height: 40vh;
+    transform: rotate(90deg);
+    margin-top: 10vh;
+}
+
+#container {
+    margin-top: -70vh;
+    margin-left: 40vh;
+    margin-right: 40vh;
+    display: grid;
+    grid-template-columns: 10vw repeat(2, 1fr) 10vw;
+    height: 5300px;
+}
+
+.arcen_izq {
+    grid-column: 1/2;
+    background-color: grey;
+    border-right-width: 1vw;
+    border-right-style: solid;
+    border-right-color: white;
+}
+
+.carril_izq {
+    grid-column: 2/3;
+    background-color: grey;
+    border-right-width: 0.5vw;
+    border-right-style: dashed;
+    border-right-color: white;
+}
+
+.carril_dcha {
+    grid-column: 3/4;
+    background-color: grey;
+    border-left-width: 0.5vw;
+    border-left-style: dashed;
+    border-left-color: white;
+}
+
+.arcen_dcha {
+    grid-column: 4/5;
+    background-color: grey;
+    border-left-width: 1vw;
+    border-left-style: solid;
+    border-left-color: white;
+}
